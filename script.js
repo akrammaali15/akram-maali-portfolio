@@ -44,6 +44,7 @@ if (langBtn) {
     });
 }
 
+
 // 3. Scroll Animation
 
 const sections = document.querySelectorAll("section");
@@ -66,6 +67,7 @@ sections.forEach(function(section) {
     observer.observe(section);
 });
 
+
 // ===============================
 // 4. Dark Mode
 // ===============================
@@ -83,6 +85,7 @@ if (themeBtn) {
         document.body.classList.toggle("dark-mode");
 
 
+
         if (document.body.classList.contains("dark-mode")) {
             localStorage.setItem("theme", "dark");
             themeBtn.textContent = "☀️";
@@ -96,4 +99,3 @@ if (themeBtn) {
 console.log("Portfolio JavaScript loaded successfully!");
 console.log(document.body.className);
 console.log(getComputedStyle(document.body).backgroundColor);
-
